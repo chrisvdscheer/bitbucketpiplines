@@ -1,0 +1,11 @@
+image: samueldebruyn/debian-git
+
+pipelines:
+  default:
+    - step:
+        script:
+          - apt-get update
+          - apt-get -qq install git-ftp
+          - git ftp init -f --user $FTP_USERNAME --passwd $FTP_PASSWORD [FTPURL AND FILE PATH here]
+          - git ftp catchup
+          - git ftp push --user $FTP_USERNAME --passwd $FTP_PASSWORD [FTPURL AND FILE PATH here]
