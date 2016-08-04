@@ -9,3 +9,6 @@ Met natuurlijk als waarde jou FTP username en wachtwoord.
 Nadat je vervolgens je project commit, zal bitbuckets pipelines wanneer reeds ingesteld. 
 Automatisch jou project via FTP naar de gewenste locatie uitrollen.
 
+# LET OP
+Vergeet natuurlijk niet de FTP url en het pad naar de root folder te wijzigen in het bitbucket.yml bestand.
+
